@@ -15,33 +15,49 @@ export default function CarouselWeb(){
                                 <Carousel>
                         <Carousel.Item>
                          <Col xs={12} md={12}>
-                            <div className='img-center'><Image src={mo} rounded /></div>
+                           <a href="https://www.mil.gov.ua/" type='blank' >
+                           <div className='img-center'><Image src={mo} href="#" rounded /></div>
+                           </a>
+                           
                           </Col>
                          </Carousel.Item>
                         <Carousel.Item>
                         <Col xs={12} md={12}>
-                           
-                        <div className='img-center'><Image src={mvs} rounded /></div>
+                           <a href="https://mvs.gov.ua/">
+                           <div className='img-center'><Image src={mvs} rounded /></div>
+                           </a>
                           </Col>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Col xs={12} md={12}>
-                        <div className='img-center'><Image src={npu} rounded /></div>
+                        <a href="https://npu.edu.ua/">
+                           <div className='img-center'><Image src={npu} rounded /></div>
+                           </a>
+                      
                           </Col>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Col xs={12} md={12}>
-                        <div className='img-center'><Image src={president} rounded /></div>
+                        <a href="https://www.president.gov.ua/">
+                           <div className='img-center'><Image src={president} rounded /></div>
+                           </a>
+                       
                           </Col>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Col xs={12} md={12}>
-                        <div className='img-center'><Image src={rnbo} rounded /></div>
+                        <a href="https://www.rnbo.gov.ua/">
+                           <div className='img-center'><Image src={rnbo} rounded /></div>
+                           </a>
+                       
                           </Col>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Col xs={12} md={12}>
-                        <div className='img-center'><Image src={sbu} rounded /></div>
+                        <a href="https://ssu.gov.ua/">
+                           <div className='img-center'><Image src={sbu} rounded /></div>
+                           </a>
+                       
                           </Col>
                         </Carousel.Item>
                      

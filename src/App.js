@@ -5,21 +5,33 @@ import Cards from "./componets/Cards/Cards";
 import CarouselFotos from "./componets/CarouselFotos/CarouselFotos";
 import CarouselWeb from "./componets/CarouselWeb/CarouselWeb";
 import Footer from "./componets/Footer/Footer";
-import { Switch, Route, Redirect } from "react-router-dom";
+import {BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Kerivnuku from "./componets/Kerivnuku/Kerivnuku";
 
 
 
 function App() {
   return (
-      <>
-      <Header/>
-       <Menu/>
-       <MyCarousel/>
-       <Cards/>
-       <CarouselFotos/>
-       <CarouselWeb/>
-       <Footer/>
-      </>
+      <Router>
+        <Header/>
+        <Menu/>
+        <Switch>
+        <Route exact  path='/'>
+            <MyCarousel/>
+            <Cards/>
+            <CarouselFotos/>
+            <CarouselWeb/>
+        </Route>
+        <Route exact  path='/kerivn'>
+            <Kerivnuku/>
+        </Route>
+        </Switch>
+
+        <Footer/>
+      </Router>
   );
 }
 

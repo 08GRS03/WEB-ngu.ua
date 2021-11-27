@@ -8,16 +8,18 @@ export default function Menu(){
     return(
       <Navbar bg="success" expand="lg">
       <Container fluid>
-          <Button  variant="success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+          <a className="btn" href="/" variant="success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                     <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                  </svg></Button>
+                  </svg>
+          </a>
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic1">НГУ</Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">КЕРІВНИЦТВО</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">СИМВОЛІКА</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">СТРУКТУРА</Dropdown.Item>
+                    <Dropdown.Item href="/kerivn">КЕРІВНИЦТВО</Dropdown.Item>
+                    <Dropdown.Item href="https://ngu.gov.ua/symvolika/">СИМВОЛІКА</Dropdown.Item>
+                    <Dropdown.Item href="https://ngu.gov.ua/struktura-naczionalnoyi-gvardiyi-ukrayiny/">СТРУКТУРА</Dropdown.Item>
                     <Dropdown.Item href="#/action-4">ЗАВДАННЯ</Dropdown.Item>
                   </Dropdown.Menu>
               </Dropdown>
@@ -26,10 +28,10 @@ export default function Menu(){
                 ДІЯЛЬНІСТЬ
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">БЛАГОДІЙНА ДОПОМОГА</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">МІЖНАРОДНЕ СПІВРОБІТНИЦТВО</Dropdown.Item>
+                  <Dropdown.Item href="https://ngu.gov.ua/blagodijna-dopomoga/">БЛАГОДІЙНА ДОПОМОГА</Dropdown.Item>
+                  <Dropdown.Item href="https://ngu.gov.ua/mizhnarodne-spivrobitnycztvo/">МІЖНАРОДНЕ СПІВРОБІТНИЦТВО</Dropdown.Item>
                   <Dropdown.Item href="#/action-3">МИРОТВОРЧА ДІЯЛЬНІСТЬ</Dropdown.Item>
-                  <Dropdown.Item href="#/action-4">СПОРТ</Dropdown.Item>
+                  <Dropdown.Item href="/sport">СПОРТ</Dropdown.Item>
                 </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
@@ -55,7 +57,7 @@ export default function Menu(){
                 </Dropdown.Menu>
                 </Dropdown>  
                 
-                <Button variant="success">КОНТАКТИ</Button>
+                <Button variant="success"><a href="https://ngu.gov.ua/kontakty"></a>КОНТАКТИ</Button>
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
