@@ -1,0 +1,14 @@
+.info-creator{
+
+border-top: solid white;
+width: 100%;
+height: 100px;
+margin: 5px;
+ display: flex;
+ justify-content: center;
+ padding-top: 30px;
+}
+
+.text{
+    color: white;
+}

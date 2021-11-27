@@ -1,0 +1,12 @@
+.cards{
+   display: flex;
+   align-items: inherit;
+
+   margin:25px;
+   gap: 5px;
+}
+
+.img-size{
+   width: 300px;
+   height: 200px;
+}
